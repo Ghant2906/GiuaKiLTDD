@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List"
+    android:background="#EAE7E7">
+
+    <ListView
+        android:id="@+id/listViewIItem"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_below="@+id/divider2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/startBlue"
+        android:gravity="center"
+        android:text="Món ăn yêu thích"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:background="@color/colorPrimary"
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/listViewIItem"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/menu_bottom_nav">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
